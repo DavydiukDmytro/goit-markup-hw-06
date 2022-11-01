@@ -325,15 +325,42 @@
       </section>
       <!-- Модальне вікно -->
       <div class="backdrop is-hidden" data-modal>
-        <form class="modal">
+        <form class="modal feedback-modal">
           <button data-modal-close class="back">
             <svg class="svg">
               <use href="./images/icon.svg#icon-close"></use>
             </svg>
-            <b>Залиште свої дані, ми вам передзвонимо</b>
-
-            <label for=""></label>
           </button>
+          <p class="title">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="form-field">
+            <label class="form-label form-label-name" for="name">Ім'я</label>
+            <input class="form-input" type="text" name="name" id="name" />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="tel">Телефон</label>
+            <input class="form-input" type="tel" name="tel" id="tel" />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="mail">Пошта</label>
+            <input class="form-input" type="email" name="mail" id="mail" />
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="comment">Коментар</label>
+            <textarea
+              class="form-textarea"
+              placeholder="Введіть текст"
+              name="comment"
+              id="comment"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="form-field form-policy">
+            <input class="form-input" type="checkbox" name="policy" id="policy" />
+            <label class="form-label" for="policy"
+              >Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label
+            >
+          </div>
+          <button class="button primary" type="submit">Відправити</button>
         </form>
       </div>
     </main>
